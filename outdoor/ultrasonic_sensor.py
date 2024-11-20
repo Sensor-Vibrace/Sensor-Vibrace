@@ -1,3 +1,11 @@
+# RPi.GPIO 라이브러리 설치 코드 (필요 시)
+# sudo apt-get update
+# sudo apt-get install python3-rpi.gpio
+
+# PyBluez 라이브러리 설치 코드
+# sudo apt-get install python3-pybluez
+
+
 import RPi.GPIO as GPIO
 import time
 import bluetooth  # PyBluez를 사용한 블루투스 모듈 추가
