@@ -14,6 +14,40 @@ HearU는 청각장애인의 일상생활에서 놓칠 수 있는 소리를 감�
 
 ---
 
+## ❗ **필요 라이브러리**
+
+이 코드를 실행하기 위해서는 다음의 Python 라이브러리가 필요합니다.
+
+- **RPi.GPIO**
+- **time**
+- **serial**
+- **spidev**
+- **math**
+- **speech_recognition**
+- **gtts**
+- **os**
+- **subprocess**
+- **datetime**
+- **unicodedata**
+
+이 라이브러리들은 아래와 같이 'pip'를 통해 설치할 수 있습니다.
+```bash
+pip3 install RPi.GPIO --break-system-packages
+```
+
+---
+
+## 📌 **핀 및 포트 설정**
+- **TRIG:** 24
+- **ECHO:** 23
+- **진동 감지 센서 핀:** 18
+- **소음 감지 센서 채널:** 4
+- **마그네틱 센서 핀:** 21
+- **Bluetooth 포트:** /dev/serial0
+- **전송 속도:** 9600
+
+---
+
 ## 🛠 **주요 기능**
 ### 1. **소음 감지**
 - 집안 소음이 일정 수준을 초과하면 소음을 감지하고 블루투스로 사용자에게 알림 전송.  
@@ -42,6 +76,13 @@ HearU는 청각장애인의 일상생활에서 놓칠 수 있는 소리를 감�
   - Google Speech-to-Text API
     
 - **버전 관리:** Git, GitHub
+
+---
+
+## ✔ **사용 방법**
+1. Raspberry Pi에 코드를 복사하고 필요한 라이브러리 설치
+2. GPIO 핀과 센서 올바르게 연결
+3. measure_average_noise.py 파일을 먼저 실행하고 final.py 파일 실행
 
 ---
 
